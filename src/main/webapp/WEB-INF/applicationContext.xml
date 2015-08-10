@@ -5,12 +5,14 @@
 	xmlns:context="http://www.springframework.org/schema/context"
    xmlns:tx="http://www.springframework.org/schema/tx"
    xmlns:jpa="http://www.springframework.org/schema/data/jpa"
+   	xmlns:mvc="http://www.springframework.org/schema/mvc"
     xsi:schemaLocation="
       http://www.springframework.org/schema/beans 
       http://www.springframework.org/schema/beans/spring-beans.xsd
  	  http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
       http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd
-      http://www.springframework.org/schema/data/jpa http://www.springframework.org/schema/data/jpa/spring-jpa.xsd">
+      http://www.springframework.org/schema/data/jpa http://www.springframework.org/schema/data/jpa/spring-jpa.xsd
+      http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-4.1.xsd">
  
  
  <jpa:repositories base-package="com.packt.project.repository" />
@@ -20,7 +22,7 @@
 		<property name="driverClassName" value="com.mysql.jdbc.Driver" />
 		<property name="url" value="jdbc:mysql://localhost:3306/SpringHome" />
 		<property name="username" value="root" />
-		<property name="password" value="toor" />
+		<property name="password" value="" />
 	</bean>
  
    <bean id="entityManager" class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">
@@ -47,6 +49,11 @@
     <context:component-scan base-package="com.packt.project.repository" />
      
    <tx:annotation-driven transaction-manager="transactionManager"/>
+   
+	<!-- Local Resources -->
+ <!--mvc:resources location="/resources/css/" mapping="/css/"></mvc:resources-->
+	<!-- <mvc:resources location="/resources/javascript/" mapping="/javascript/"></mvc:resources>
+	<mvc:resources location="/resources/images/" mapping="/images/"></mvc:resources> -->
  
    <bean id="persistenceExceptionTranslationPostProcessor"
       class="org.springframework.dao.annotation.PersistenceExceptionTranslationPostProcessor" />

@@ -13,18 +13,24 @@
 	<definition name="welcome" extends="common">
 		<put-attribute name="title" value="Welcome to Spring Home" />
 		<put-attribute name="header" value="" />
-		<put-attribute name="main" value="/WEB-INF/layout/welcome.jsp" />
+		<put-attribute name="main" value="/WEB-INF/views/welcome.jsp" />
+		<put-attribute name="current" value="welcome" />
 	</definition>	
 	
+	<definition name="welcome2" extends="common">
+		<put-attribute name="title" value="Welcome to Spring Home 2" />
+		<put-attribute name="header" value="" />
+		<put-attribute name="main" value="/WEB-INF/views/welcome2.jsp" />
+		<put-attribute name="current" value="welcome2" />
+	</definition>	
 
-	<!--<definition name="home" extends="common">
+	<definition name="apartment" extends="common">
 		<put-attribute name="title" value="WAA Project" />
-		<put-attribute name="category" value="/WEB-INF/layout/category.jsp" />
-		<put-attribute name="main" value="/WEB-INF/view/home.jsp" />
-		<put-attribute name="current" value="home" />
+		<put-attribute name="main" value="/WEB-INF/views/apartment.jsp" />
+		<put-attribute name="current" value="apartment" />
 	</definition>
 	
-	<definition name="login" extends="common">
+	<!-- <definition name="login" extends="common">
 		<put-attribute name="title" value="Login" />
 		<put-attribute name="main" value="/WEB-INF/view/login.jsp" />
 		<put-attribute name="current" value="login" />

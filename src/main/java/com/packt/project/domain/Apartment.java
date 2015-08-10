@@ -10,24 +10,24 @@ public class Apartment extends Property {
 	
 	private int floorNumber;
 	
-	@ElementCollection
-	private List<String> communityAmenities;
 	
-	public List<String> getCommunityAmenities() {
+	private String communityAmenities;
+	
+	public String getCommunityAmenities() {
 		return communityAmenities;
 	}
 
-	public void setCommunityAmenities(List<String> communityAmenities) {
+	public void setCommunityAmenities(String communityAmenities) {
 		this.communityAmenities = communityAmenities;
 	}
 	
-	public void addAmenity(String amenity){
+	/*public void addAmenity(String amenity){
 		communityAmenities.add(amenity);
 	}
 	
 	public void removeAmenity(String amenity){
 		communityAmenities.remove(amenity);
-	}	
+	}	*/
 
 	public int getFloorNumber() {
 		return floorNumber;

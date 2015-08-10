@@ -15,5 +15,12 @@ public class HomeController {
 		//model.addAttribute("newProducts", productService.findAllByOrderByCreatedDateDesc());
 		return "welcome";
 	}
+	
+	@RequestMapping(value={"/welcome2"}, method = RequestMethod.GET)
+	public String helloWorld2(Model model){
+		//model.addAttribute("featureProducts", productService.getFeatureProduct());
+		//model.addAttribute("newProducts", productService.findAllByOrderByCreatedDateDesc());
+		return "welcome2";
+	}	
  
 }

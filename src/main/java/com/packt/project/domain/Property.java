@@ -32,12 +32,14 @@ public class Property {
 	
 	private Date availableDate;
 	
+	private String typeOf;
+	
 	@OneToOne (cascade = CascadeType.ALL, fetch = FetchType.EAGER)
 	@JoinColumn(name = "addressId")
 	private Address address;
 	
-	@ElementCollection
-	protected List<String> amenities;
+
+	private String amenities;
 
 	public Address getAddress() {
 		return address;
@@ -47,21 +49,21 @@ public class Property {
 		this.address = address;
 	}
 
-	public List<String> getAmenities() {
+	public String getAmenities() {
 		return amenities;
 	}
 
-	public void setAmenities(List<String> amenities) {
+	public void setAmenities(String amenities) {
 		this.amenities = amenities;
 	}
 	
-	public void addAmenity(String amenity){
+	/*public void addAmenity(String amenity){
 		amenities.add(amenity);
 	}
 	
 	public void removeAmenity(String amenity){
 		amenities.remove(amenity);
-	}	
+	}	*/
 
 	public Long getId() {
 		return id;
@@ -109,6 +111,14 @@ public class Property {
 
 	public void setAvailableDate(Date availableDate) {
 		this.availableDate = availableDate;
+	}
+
+	public String getTypeOf() {
+		return typeOf;
+	}
+
+	public void setTypeOf(String typeOf) {
+		this.typeOf = typeOf;
 	}
 	
 	

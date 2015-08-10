@@ -9,7 +9,9 @@
 <title>Welcome</title>
 </head>
 <body>
-	<section>
+
+This is the welcome page.
+<!--<section>
 		<div class="jumbotron">
 			<div class="container">
 				<h1> ${greeting} </h1>
@@ -25,7 +27,7 @@
 					</a>
 				</div>	
 		</div>	
-	</section>
+	</section> -->
 	
 </body>
 </html>

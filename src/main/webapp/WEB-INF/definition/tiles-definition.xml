@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+        "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+        "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+	<definition name="common" template="/WEB-INF/layout/common.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="header" value="" />
+		<put-attribute name="navigation" value="/WEB-INF/layout/navigation.jsp" />
+		<put-attribute name="footer" value="/WEB-INF/layout/footer.jsp" />
+	</definition>
+	
+	<definition name="welcome" extends="common">
+		<put-attribute name="title" value="Welcome to Spring Home" />
+		<put-attribute name="header" value="" />
+		<put-attribute name="main" value="/WEB-INF/layout/welcome.jsp" />
+	</definition>	
+	
+
+	<!--<definition name="home" extends="common">
+		<put-attribute name="title" value="WAA Project" />
+		<put-attribute name="category" value="/WEB-INF/layout/category.jsp" />
+		<put-attribute name="main" value="/WEB-INF/view/home.jsp" />
+		<put-attribute name="current" value="home" />
+	</definition>
+	
+	<definition name="login" extends="common">
+		<put-attribute name="title" value="Login" />
+		<put-attribute name="main" value="/WEB-INF/view/login.jsp" />
+		<put-attribute name="current" value="login" />
+	</definition>
+	
+	<definition name="products" extends="common">
+		<put-attribute name="title" value="Products" />
+		<put-attribute name="category" value="/WEB-INF/layout/category.jsp" />
+		<put-attribute name="main" value="/WEB-INF/view/products.jsp" />
+		<put-attribute name="current" value="products" />
+	</definition>
+	
+	 <definition name="addProduct" extends="common">
+		<put-attribute name="title" value="Add Product" />
+		<put-attribute name="category" value="/WEB-INF/layout/category.jsp" />
+		<put-attribute name="main" value="/WEB-INF/view/addproduct.jsp" />
+		<put-attribute name="current" value="addproduct" />
+	</definition> 
+	
+	<definition name="cart" extends="common">
+		<put-attribute name="title" value="Shopping Cart" />
+		<put-attribute name="category" value="/WEB-INF/layout/category.jsp" />
+		<put-attribute name="main" value="/WEB-INF/view/cart.jsp" />
+		<put-attribute name="current" value="cart" />
+	</definition>
+	
+	<definition name="contactus" extends="common">
+		<put-attribute name="title" value="WAA Project" />
+		<put-attribute name="category" value="/WEB-INF/layout/category.jsp" />
+		<put-attribute name="main" value="/WEB-INF/view/contactus.jsp" />
+		<put-attribute name="current" value="contactus" />
+	</definition>
+	
+	<definition name="productdetail" extends="common">
+		<put-attribute name="title" value="WAA Project" />
+		<put-attribute name="category" value="/WEB-INF/layout/category.jsp" />
+		<put-attribute name="main" value="/WEB-INF/view/product_detail.jsp" />
+		<put-attribute name="current" value="productdetail" />
+	</definition>
+	
+	<definition name="userregistration" extends="common">
+		<put-attribute name="title" value="Register" />
+		<put-attribute name="main" value="/WEB-INF/view/userregistration.jsp" />
+		<put-attribute name="current" value="user" />
+	</definition>
+	
+	<definition name="registrationsuccess" extends="common">
+		<put-attribute name="title" value="Contact Us" />
+		<put-attribute name="main" value="/WEB-INF/view/registrationsuccess.jsp" />
+		<put-attribute name="current" value="user" />
+	</definition>
+	
+	<definition name="securedcontents" extends="common">
+		<put-attribute name="title" value="Contact Us" />
+		<put-attribute name="main" value="/WEB-INF/view/securedcontents.jsp" />
+		<put-attribute name="current" value="user" />
+	</definition>
+	
+	<definition name="categoryProduct" extends="common">
+		<put-attribute name="title" value="Products" />
+		<put-attribute name="category" value="/WEB-INF/layout/category.jsp" />
+		<put-attribute name="main" value="/WEB-INF/view/categoryProduct.jsp" />
+		<put-attribute name="current" value="user" />
+	</definition>
+	
+	<definition name="categories" extends="common">
+		<put-attribute name="title" value="Categories" />
+		<put-attribute name="category" value="/WEB-INF/layout/category.jsp" />
+		<put-attribute name="main" value="/WEB-INF/view/categories.jsp" /> 
+		<put-attribute name="current" value="categories" />
+	</definition>
+	
+	<definition name="addcategory" extends="common">
+		<put-attribute name="title" value="Add Category" />
+		<put-attribute name="category" value="/WEB-INF/layout/category.jsp" />
+		<put-attribute name="main" value="/WEB-INF/view/addcategory.jsp" /> 
+		<put-attribute name="current" value="addcategory" />
+	</definition>
+	-->
+</tiles-definitions>

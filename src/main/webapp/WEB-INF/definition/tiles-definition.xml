@@ -30,6 +30,19 @@
 		<put-attribute name="current" value="apartment" />
 	</definition>
 	
+	<definition name = "listapartment" extends= "common">
+		<put-attribute name="title" value = "WAA Project"/>
+		<put-attribute name ="main" value = "/WEB-INF/views/listapartment.jsp"/>
+		<put-attribute name = "current" value = "listapartment"/> 
+	</definition>	
+	
+	<definition name = "customerregistration" extends = "common">
+		<put-attribute name = "tittle" value = "Register"/>
+		<put-attribute name = "main" value = "/WEB_INF/views/customerregistration.jsp"/>
+		<put-attribute name = "current" value = "customerregistration"/>
+		</definition>
+	
+	
 	<!-- <definition name="login" extends="common">
 		<put-attribute name="title" value="Login" />
 		<put-attribute name="main" value="/WEB-INF/view/login.jsp" />
